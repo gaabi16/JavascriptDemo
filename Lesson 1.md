@@ -37,10 +37,10 @@ Pentru a începe să scrii și să rulezi JavaScript ai nevoie de:
 
 ```html
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Primul meu JavaScript</title>
+  <title>My first script</title>
 </head>
 <body>
   <h1>Hello, World!</h1>
