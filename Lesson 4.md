@@ -1,4 +1,6 @@
-# Lecția 4: Evenimente în JavaScript
+# Lecția 4
+
+# Evenimente în JavaScript
 
 ## Introducere
 
