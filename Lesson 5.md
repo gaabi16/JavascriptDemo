@@ -188,6 +188,6 @@ Conținut: ${comment.body}`;
 
 ---
 
-## Resursă video recomandată
+## Un video util:
 
-[![Urmărește videoclipul](https://i.ytimg.com/vi/PoRJizFvM7s/hqdefault.jpg)](https://www.youtube.com/watch?v=PoRJizFvM7s)
+[![Watch the video](https://i.ytimg.com/vi/ubw2hdQIl4E/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDpgywx9zOS1UTc6XEow7ZgHEkL1Q)](https://youtube.com/watch?v=ubw2hdQIl4E)
