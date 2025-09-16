@@ -175,7 +175,7 @@ for (let cheie in produs) {
 
 ---
 
-# 🎯 Exerciții practice
+# Exerciții practice
 
 1. Creează o funcție care primește două numere și returnează suma lor.  
 2. Scrie o funcție care primește un nume și returnează un mesaj personalizat.  
