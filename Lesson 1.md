@@ -55,7 +55,7 @@ Creează fișierul **`script.js`** în același director și adaugă cod JavaScr
 
 ## Primul script JavaScript
 
-Fișier `script.js`:
+Fișier-ul `script.js` va afișa un mesaj în consola browser-ului:
 
 ```javascript
 console.log("Hello, World!");
