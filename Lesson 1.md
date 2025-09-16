@@ -66,7 +66,7 @@ console.log("Hello, World!");
 2. Apasă `F12` sau `Ctrl+Shift+I` → tab-ul **Console**.  
 3. Vei vedea mesajul *Hello, World!*.
 
-ℹ️ **Explicație**: `console.log()` afișează mesaje în consola browserului – foarte util pentru debugging.
+**Explicație**: `console.log()` afișează mesaje în consola browserului – foarte util pentru debugging.
 
 ---
 
@@ -189,7 +189,7 @@ do {
 
 ---
 
-# 🎯 Exerciții practice
+# Exerciții practice
 
 1. Creează un fișier `script.js` și afișează în consolă numele tău.  
 2. Declară o variabilă pentru anul curent și calculează vârsta ta.  
