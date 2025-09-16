@@ -37,10 +37,10 @@ Pentru a începe să scrii și să rulezi JavaScript ai nevoie de:
 
 ```html
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Primul meu JavaScript</title>
+  <title>My first script</title>
 </head>
 <body>
   <h1>Hello, World!</h1>
@@ -55,7 +55,7 @@ Creează fișierul **`script.js`** în același director și adaugă cod JavaScr
 
 ## Primul script JavaScript
 
-Fișier `script.js`:
+Fișier-ul `script.js` va afișa un mesaj în consola browser-ului:
 
 ```javascript
 console.log("Hello, World!");
@@ -66,7 +66,7 @@ console.log("Hello, World!");
 2. Apasă `F12` sau `Ctrl+Shift+I` → tab-ul **Console**.  
 3. Vei vedea mesajul *Hello, World!*.
 
-ℹ️ **Explicație**: `console.log()` afișează mesaje în consola browserului – foarte util pentru debugging.
+**Explicație**: `console.log()` afișează mesaje în consola browserului – foarte util pentru debugging.
 
 ---
 
@@ -91,48 +91,89 @@ console.log(mesaj);
 
 ## Tipuri de date
 
-- **String**: `"Salut"`
+JavaScript suportă mai multe tipuri de date primitive:
+
+- **String**: `"Hello"` sau `'Hello'`
 - **Number**: `42`, `3.14`
 - **Boolean**: `true`, `false`
 - **Undefined**: variabilă declarată fără valoare
 - **Null**: absență intenționată a unei valori
-- **Symbol**: tip unic (din ES6)
+- **Symbol**: tip unic (introdus în ES6)
 - **Object**: colecție de chei–valori
 
 ```javascript
-let nume = "John";    // String
-let varsta = 30;      // Number
+let nume = "Charles";    // String
+let varsta = 50;      // Number
 let esteStudent = true; // Boolean
 let necunoscut;       // Undefined
-let nimic = null;     // Null
+let nothing = null;     // Null
 ```
 
 ---
 
 ## Variabile și operatori
 
-### Declararea variabilelor
-- `var` → funcționează pe toată funcția (nu se mai recomandă).  
-- `let` → vizibil doar în bloc (`{ }`), recomandat.  
+Variabilele sunt utilizate pentru a stoca date pe care le putem folosi și modifica pe parcursul programului.
+
+Operatorii sunt simboluri care efectuează operațiuni asupra variabilelor și valorilor.
+
+### Declararea și inițializarea variabilelor
+- `var` → vizibil la nivel de funcție.
+- `let` → vizibil doar în bloc (`{ }`), recomandat pentru variabilele care pot fi reasignate.  
 - `const` → valoare constantă (nu se poate reasigna).
 
 ```javascript
-var nume = "John";
+var nume = "Janet";
 let varsta = 25;
-const PI = 3.14;
+const number = 3;
+
+var nume = "Jane"; // Este permis
+number = 7; // Eroare: Assignment to constant variable
 ```
 
 ### Operatori aritmetici
+
+- **Adunare (+)**: `a + b`
+- **Scădere (-)**: `a - b`
+- **Înmulțire (*)**: `a * b`
+- **Împărțire (/)**: `a / b`
+- **Modul (%)**: `a % b`
+- **Exponentiere (**)**: `a ** b`
+
+Exemplu:
 ```javascript
-let x = 10, y = 5;
-console.log(x + y); // 15
-console.log(x ** y); // 100000
+let x = 10, y = 3;
+console.log(x + y); // 13
+console.log(x - y); // 7
+console.log(x * y); // 30
+console.log(x / y); // 3
+console.log(x % y); // 1
+console.log(x ** y); // 1000
 ```
 
+### Operatori de atribuire
+
+- **Atribuire simplă (=)**: `x = y`
+- **Atribuire cu adunare (+=)**: `x += y` (echivalent cu `x = x + y`)
+- **Atribuire cu scădere (-=)**: `x -= y`
+- **Atribuire cu înmulțire (*=)**: `x *= y`
+- **Atribuire cu împărțire (/=)**: `x /= y`
+
 ### Operatori de comparare
+
+- **Egalitate (==)**: `x == y`
+- **Egalitate strictă (===)**: `x === y`
+- **Diferență (!=)**: `x != y`
+- **Diferență strictă (!==)**: `x !== y`
+- **Mai mare (>)**: `x > y`
+- **Mai mic (<)**: `x < y`
+- **Mai mare sau egal (>=)**: `x >= y`
+- **Mai mic sau egal (<=)**: `x <= y`
+
+Exemplu:
 ```javascript
-console.log(5 == "5");   // true
-console.log(5 === "5");  // false
+console.log(10 == "10");   // true
+console.log(10 === "10");  // false
 console.log(10 > 3);     // true
 ```
 
@@ -151,14 +192,40 @@ if (varsta >= 18) {
 }
 ```
 
+### 4.2. Else-If
+
+Instrucțiunea `else if` adaugă condiții suplimentare.
+
+Exemplu:
+```javascript
+let scor = 75;
+
+if (scor >= 90) {
+    console.log("Nota: Foarte Bine");
+} else if (scor >= 80) {
+    console.log("Nota: Bine");
+} else if (scor >= 65) {
+    console.log("Nota: Suficient);
+} else {
+    console.log("Nota: Insuficient");
+}
+```
+
 ### Switch
 ```javascript
 let zi = 3;
 switch (zi) {
-  case 1: console.log("Luni"); break;
-  case 2: console.log("Marți"); break;
-  case 3: console.log("Miercuri"); break;
-  default: console.log("Zi invalidă");
+  case 1:
+      console.log("Luni");
+      break;
+  case 2:
+      console.log("Marți");
+      break;
+  case 3:
+      console.log("Miercuri");
+      break;
+  default:
+      console.log("Zi invalidă");
 }
 ```
 
@@ -189,10 +256,10 @@ do {
 
 ---
 
-# 🎯 Exerciții practice
+# Exerciții practice
 
 1. Creează un fișier `script.js` și afișează în consolă numele tău.  
 2. Declară o variabilă pentru anul curent și calculează vârsta ta.  
-3. Folosește o buclă `for` pentru a afișa numerele de la 1 la 10.  
-4. Scrie un program care verifică dacă un număr este par sau impar.  
+3. Folosește o buclă `for` pentru a afișa numerele pare de la 1 la 10.  
+4. Scrie un program care verifică dacă un număr este palindrom.  
 5. Creează un `switch` care afișează ziua săptămânii în funcție de un număr 1–7.  
