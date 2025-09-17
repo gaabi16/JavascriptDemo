@@ -1,4 +1,6 @@
-# Lecția: Promises și Async/Await în JavaScript
+# Lecția 6
+
+# Promises și Async/Await în JavaScript
 
 ## Promises și Async/Await
 
