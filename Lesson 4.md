@@ -107,3 +107,7 @@ Când se apasă pe buton, mesajele sunt afișate în ordinea fazelor de propagar
 ```
 
 Dacă apeși pe copil, se afișează doar alerta corespunzătoare lui, iar cea a părintelui nu mai apare.
+
+## Custom events
+
+[![Watch the video](https://img.youtube.com/vi/DzZXRvk3EGg/mqdefault.jpg)](https://www.youtube.com/watch?v=DzZXRvk3EGg)
