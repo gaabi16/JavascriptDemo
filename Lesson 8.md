@@ -126,3 +126,8 @@ WebSocket este o tehnologie puternică pentru aplicațiile în timp real,
 oferind comunicare bidirecțională, eficiență și scalabilitate. Folosit 
 corect, poate îmbunătăți semnificativ experiența utilizatorilor în aplicații 
 moderne precum chat-uri, jocuri online și dashboard-uri dinamice.
+
+### Create a WebSocket using Node.js
+
+[![Watch the video](https://img.youtube.com/vi/FduLSXEHLng/mqdefault.jpg)](https://www.youtube.com/watch?v=FduLSXEHLng)
+
