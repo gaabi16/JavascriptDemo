@@ -1,0 +1,30 @@
+#title {
+    background-color: yellowgreen;
+    border: 2px solid rgb(93, 51, 51);
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    margin: 2em;
+    font-size: large;
+    padding: 10px;
+}
+
+#rdn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    border: 3px dashed red;
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.tgl {
+    border-radius: 20%;
+}
+
+/* #rdn-div:hover {
+    background-color: pink;
+} */
