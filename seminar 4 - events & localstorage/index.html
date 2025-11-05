@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="Write something..." style="margin-top: 20px; margin-left: 5%;">
+    <p id="placeholder"></p> <!-- paragraf in care apare in timp real ce este introdus in inputul de mai sus -->
+
+    <!-- simulare de user form -->
+    <form id="userForm" style="margin-top: 20px; margin-left: 5%;">
+        <input type="text" placeholder="Name" id="name" required> <br> <br>
+        <input type="email" placeholder="Email" id="email" required> <br> <br>
+        <input type="number" placeholder="Age" id="age" required> <br> <br>
+        <input type="city" placeholder="City" id="city" required> <br> <br>
+        <button type="button" id="showBtn">Show user details</button>
+    </form>
+
+    <!-- exemplu propagare -->
+    <div id="parinte">Parinte
+        <div id="copil">Copil</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

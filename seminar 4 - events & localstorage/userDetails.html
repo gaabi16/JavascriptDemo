@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- div in care se vor afisa datele userului dinamic -->
+    <div id="center-box"></div>
+    <script>
+        window.addEventListener("load", () => { // event declansat cand pagina isi face load
+            const user = JSON.parse(localStorage.getItem("userDetails")); // parsam JSON-ul si apoi il salvam din localStorage intr-un obiect
+            const box = document.getElementById("center-box");
+
+            console.log(user);
+
+            if (user) { // daca user contine date (daca JSON.parse nu a aruncat o eroare) atunci afisez datele
+                box.innerHTML = `
+                    <h2>User details</h2>
+                    <div><strong>Name:</strong> ${user.name}</div>
+                    <div><strong>Email:</strong> ${user.email}</div>
+                    <div><strong>Age:</strong> ${user.age}</div>
+                    <div><strong>City:</strong> ${user.city}</div>
+                    <button id="backBtn">Back</button>
+                `;
+            } else {
+                box.innerHTML = `<p>No user details found</p>`;
+            }
+
+            box.classList.add("animation");
+
+            document.querySelector("#backBtn").addEventListener("click", () => {
+                window.location.href = "index.html"; // schimb url-ul inapoi la pagina principala
+            });
+        })
+    </script>
+</body>
+</html>

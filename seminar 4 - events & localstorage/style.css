@@ -1,0 +1,44 @@
+#placeholder {
+    border: 3px solid blue;
+    padding: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#center-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 3px solid rgb(164, 163, 163);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.animation {
+    animation: fadeIn 3s ease forwards;
+}
+
+/* crearea unei animatii de tip fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    to {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+}
+
+#parinte {
+    border: 3px solid green;
+    padding: 30px;
+    margin-top: 5%;
+}
+
+#copil {
+    border: 3px solid red;
+    padding: 30px;
+}
